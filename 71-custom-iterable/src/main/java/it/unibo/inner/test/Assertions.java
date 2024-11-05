@@ -1,6 +1,6 @@
 package it.unibo.inner.test;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -44,7 +44,7 @@ public final class Assertions {
 
     private static long iterableSize(Iterable<?> iter) {
         var counter = 0L;
-        for (var elem : iter) {
+        for (@SuppressWarnings("unused") var elem : iter) {
             counter++;
         }
         return counter;
